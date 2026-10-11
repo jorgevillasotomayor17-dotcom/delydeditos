@@ -1,0 +1,95 @@
+:root {
+  --fondo: #FFF8F0;
+  --texto: #4A3B35;
+  --principal: #F4A988;
+  --principal-hover: #E8926C;
+  --acento: #F9D5CB;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body{
+    background-color: var(--fondo);
+    font-family: Fira Code, monospace;
+}
+
+.descripcion{
+    text-align: center;
+    color: var(--principal-hover);
+}
+
+select, input{
+    width: 220px;
+    box-sizing: border-box;
+    border: 1px solid var(--principal);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-family: inherit;
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+    gap: 30px;
+}
+
+.fila-productos{
+    display: flex;
+    align-items: flex-start;
+    min-height: 320px;
+    gap: 20px;
+   
+}
+
+ .fila-productos img{
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.productos{
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid var(--principal);
+    border-radius: 8px;
+    background-color: var(--acento);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;gap: 12px;
+    align-items: flex-start;
+}
+
+.menu2{
+    text-align: center;
+    color: #db8b5c;
+    border:solid #F4A988;
+    background-color: #F9D5CB ;
+}
+
+.menu{
+    font-family: Fira Code, monospace;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--texto);
+    text-align: center;
+    border: solid var(--principal);
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu:hover{
+    font-family: Fira Code, monospace;
+    font-size: 20px;
+    color: goldenrod;
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+    border: solid var(--principal-hover);
+}

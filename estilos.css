@@ -1,0 +1,111 @@
+:root {
+  --fondo: #FFF8F0;
+  --texto: #4A3B35;
+  --principal: #F4A988;
+  --principal-hover: #E8926C;
+  --acento: #F9D5CB;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor{
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--texto);
+    font-size: 18px;
+
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fila img{
+    width: 200px;
+    height: auto;
+}
+
+.contenedor{
+    max-width: 700px;
+    text-align: center;
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: Fira Code, monospace;
+}
+
+h1{
+   text-align: center;
+    color: #db8b5c;
+    border: solid var(--principal);
+    background-color: var(--acento);
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    color: #db8b5c;
+    border: solid var(--principal);
+    background-color: var(--acento);
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+
+.lema{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: goldenrod;
+    font-size: 24px;
+}
+
+p{
+    text-align: center;
+    color: goldenrod;
+}
+
+.menu{
+    font-family: Fira Code, monospace;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--texto);
+    border: solid var(--principal);
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+}
+.menu:hover{
+    font-family: Fira Code, monospace;
+    color: goldenrod;
+    font-size: 20px;
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+    border: solid var(--principal-hover);
+}
+
+.redes{
+    font-family: Fira Code, monospace;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--texto);
+    text-align: center;
+    border: solid var(--principal);
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+}
+
+.redes:hover{
+    font-family: Fira Code, monospace;
+    font-size: 20px;
+    color: goldenrod;
+    background-color: var(--acento);
+    transition: background-color 1.5s, font-size 1.5s;
+    border: solid var(--principal-hover);
+}

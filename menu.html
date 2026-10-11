@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_menu.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <h1 class="menu2">Agenda tu pedido</h1>
+    <p class="descripcion">¿De que tienes antojo hoy?</p>
+    <button class="menu"><a href="index.html">Inicio</a></button>
+    <div class="catalogo">
+        <div class="fila-productos">
+            <img src="deditos4.jpg" alt="imagen del producto (Deditos)">
+            <div class="productos">
+                <label>
+                    ¿Deditos de?
+                    <select class="sabor">
+                        <option value="700">Mozzarella</option>
+                        <option value="300">Bocadillo</option>
+                        <option value="300">Queso Costeño</option>
+                        <option value="400">Mixto Bocadillo/Queso Costeño</option>
+                        <option value="400">Mixto Bocadillo/Mozzarella</option>
+                        <option value="400">Mixto Queso Costeño/Mozzarella</option>
+                    </select>
+                </label>
+                <label>
+                    ¿Los quieres?
+                    <select class="estado-de-coccion">
+                        <option value="100">Crudos</option>
+                        <option value="200">Fritos</option>
+                    </select>
+                </label>
+                <label>
+                    Tamaño
+                    <select class="porcion">
+                        <option value="300">Desayuno</option>
+                        <option value="100">Cóctel</option>
+                        <option value="200">Merienda</option>
+                    </select>
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" class="cantidad" value="10" min="10">
+                </label>
+                <p>Total: <span class="resultado">0</span></p>
+            </div>
+        </div>
+        <div class="fila-productos">
+            <img src="empanaditas1.jpg" alt="imagen del producto (Empanaditas)">
+            <div class="productos">
+                <label>
+                    ¿Empanaditas de?
+                    <select class="sabor">
+                        <option value="500">Carne Molida</option>
+                        <option value="500">Pollo</option>
+                        <option value="500">Carne Desmechada</option>
+                        <option value="500">Hawaiana</option>
+                        <option value="500">Jamon con queso</option>
+                    </select>
+                </label>
+                <label>
+                    ¿Las quieres?
+                    <select class="estado-de-coccion">
+                        <option value="100">Crudas</option>
+                        <option value="200">Fritas</option>
+                    </select>
+                </label>
+                <label>
+                    Tamaño
+                    <select class="porcion">
+                        <option value="300">Desayuno</option>
+                        <option value="100">Cóctel</option>
+                        <option value="200">Merienda</option>
+                    </select>
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" class="cantidad" value="10" min="10">
+                </label>
+                <p>Total: <span class="resultado">0</span></p>
+            </div>
+        </div>
+        <div class="fila-productos">
+            <img src="medallon1.jpeg" alt="imagen del producto (Medallones)">
+            <div class="productos">
+                <label>
+                    ¿Medallones de?
+                    <select class="sabor">
+                        <option value="200">Salchicha</option>
+                        <option value="200">Pollo</option>
+                    </select>
+                </label>
+                <label>
+                    ¿Los quieres?
+                    <select class="estado-de-coccion">
+                        <option value="100">Crudos</option>
+                        <option value="200">Fritos</option>
+                    </select>
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" class="cantidad" value="10" min="10">
+                </label>
+                <p>Total: <span class="resultado">0</span></p>
+            </div>
+        </div>
+
+        <div class="fila-productos">
+            <img src="bolitasdecarne1.png" alt="imagen del producto (Bolitas de Carne y lenteja)">
+            <div class="productos">
+                <label>
+                    ¿Bolitas de?
+                    <select class="sabor">
+                        <option value="300">Carne</option>
+                        <option value="200">Lenteja</option>
+                    </select>
+                </label>
+                <label>
+                    ¿Los quieres?
+                    <select class="estado-de-coccion">
+                        <option value="100">Crudos</option>
+                        <option value="200">Fritos</option>
+                    </select>
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" class="cantidad" value="10" min="10">
+                </label>
+                <p>Total: <span class="resultado">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
