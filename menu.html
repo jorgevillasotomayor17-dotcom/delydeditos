@@ -1,141 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos_menu.css">
-    <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d3f2b">
+  <meta name="description" content="Arma tu pedido de pasabocas DelyDeditos y envíalo por WhatsApp en Barranquilla.">
+  <title>Menú y pedidos | DelyDeditos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos_menu.css">
 </head>
-
 <body>
-    <h1 class="menu2">Agenda tu pedido</h1>
-    <p class="descripcion">¿De que tienes antojo hoy?</p>
-    <button class="menu"><a href="index.html">Inicio</a></button>
-    <div class="catalogo">
-        <div class="fila-productos">
-            <img src="deditos.jpg" alt="imagen del producto (Deditos)">
-            <div class="productos">
-                <label>
-                    ¿Deditos de?
-                    <select class="sabor">
-                        <option value="700">Mozzarella</option>
-                        <option value="300">Bocadillo</option>
-                        <option value="300">Queso Costeño</option>
-                        <option value="400">Mixto Bocadillo/Queso Costeño</option>
-                        <option value="400">Mixto Bocadillo/Mozzarella</option>
-                        <option value="400">Mixto Queso Costeño/Mozzarella</option>
-                    </select>
-                </label>
-                <label>
-                    ¿Los quieres?
-                    <select class="estado-de-coccion">
-                        <option value="100">Crudos</option>
-                        <option value="200">Fritos</option>
-                    </select>
-                </label>
-                <label>
-                    Tamaño
-                    <select class="porcion">
-                        <option value="300">Desayuno</option>
-                        <option value="100">Cóctel</option>
-                        <option value="200">Merienda</option>
-                    </select>
-                </label>
-                <label>
-                    Cantidad
-                    <input type="number" class="cantidad" value="10" min="10">
-                </label>
-                <p>Total: <span class="resultado">0</span></p>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">D<span>♡</span>D</span><span class="brand-name">DelyDeditos<small>Hechos para compartir</small></span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a class="active" href="menu.html">Nuestro menú</a><a href="redes.html">Contacto</a><a class="nav-cta" href="#carrito">Mi pedido <span>↓</span></a></nav>
+  </header>
+  <main>
+    <section class="page-intro"><p class="eyebrow">RECIÉN ELEGIDOS PARA TI</p><h1>Arma tu pedido</h1><p>Escoge tus favoritos, elige la presentación y agrega las cantidades. Al terminar, envía tu pedido por WhatsApp para confirmar disponibilidad y entrega.</p></section>
+    <div class="wrap page-main">
+      <div class="menu-toolbar"><div><strong>Nuestros pasabocas</strong><small>Precios de referencia en pesos colombianos (COP)</small></div><label class="search-box"><span>⌕</span><input id="buscar-producto" type="search" placeholder="Buscar en el menú..." aria-label="Buscar productos"></label></div>
+      <div class="category-pills" aria-label="Filtrar productos">
+        <button class="filter-pill active" data-filter="todos">Todos</button><button class="filter-pill" data-filter="deditos">Deditos</button><button class="filter-pill" data-filter="empanaditas">Empanaditas</button><button class="filter-pill" data-filter="medallones">Medallones</button><button class="filter-pill" data-filter="bolitas">Bolitas</button>
+      </div>
+      <div class="menu-layout">
+        <section class="product-grid" id="lista-productos" aria-label="Productos">
+          <article class="product-card" data-category="deditos" data-name="deditos rellenos">
+            <div class="product-image"><img src="deditos.jpg" alt="Deditos rellenos"><span class="product-label">Favorito</span></div>
+            <div class="product-body"><div class="product-title-row"><h2>Deditos rellenos</h2><span class="product-price">Desde $3.000</span></div><p>Un clásico para desayunos, meriendas y reuniones.</p>
+              <label>Relleno<select class="option-flavor"><option value="Bocadillo" data-price="3000">Bocadillo</option><option value="Queso costeño" data-price="3000">Queso costeño</option><option value="Bocadillo y queso costeño" data-price="4000">Bocadillo + queso costeño</option><option value="Mozzarella" data-price="7000">Mozzarella</option><option value="Bocadillo y mozzarella" data-price="5000">Bocadillo + mozzarella</option><option value="Queso costeño y mozzarella" data-price="5000">Queso costeño + mozzarella</option></select></label>
+              <label>Preparación<select class="option-cooking"><option value="Crudos">Crudos</option><option value="Fritos">Fritos</option></select></label>
+              <label>Tamaño<select class="option-size"><option value="Cóctel" data-extra="0">Cóctel</option><option value="Merienda" data-extra="1000">Merienda</option><option value="Desayuno" data-extra="2000">Desayuno</option></select></label>
+              <div class="product-bottom"><label class="qty-label">Cantidad<input class="product-qty" type="number" min="1" max="500" value="10"></label><button class="add-button" data-product="Deditos rellenos">Agregar <span>+</span></button></div>
             </div>
-        </div>
-        <div class="fila-productos">
-            <img src="empanaditas.jpg" alt="imagen del producto (Empanaditas)">
-            <div class="productos">
-                <label>
-                    ¿Empanaditas de?
-                    <select class="sabor">
-                        <option value="500">Carne Molida</option>
-                        <option value="500">Pollo</option>
-                        <option value="500">Carne Desmechada</option>
-                        <option value="500">Hawaiana</option>
-                        <option value="500">Jamon con queso</option>
-                    </select>
-                </label>
-                <label>
-                    ¿Las quieres?
-                    <select class="estado-de-coccion">
-                        <option value="100">Crudas</option>
-                        <option value="200">Fritas</option>
-                    </select>
-                </label>
-                <label>
-                    Tamaño
-                    <select class="porcion">
-                        <option value="300">Desayuno</option>
-                        <option value="100">Cóctel</option>
-                        <option value="200">Merienda</option>
-                    </select>
-                </label>
-                <label>
-                    Cantidad
-                    <input type="number" class="cantidad" value="10" min="10">
-                </label>
-                <p>Total: <span class="resultado">0</span></p>
+          </article>
+          <article class="product-card" data-category="empanaditas" data-name="empanaditas">
+            <div class="product-image"><img src="empanaditas.jpg" alt="Empanaditas doradas"></div>
+            <div class="product-body"><div class="product-title-row"><h2>Empanaditas</h2><span class="product-price">$5.000</span></div><p>Bocaditos perfectos para compartir y celebrar.</p>
+              <label>Relleno<select class="option-flavor"><option value="Carne molida" data-price="5000">Carne molida</option><option value="Pollo" data-price="5000">Pollo</option><option value="Carne desmechada" data-price="5000">Carne desmechada</option><option value="Hawaiana" data-price="5000">Hawaiana</option><option value="Jamón y queso" data-price="5000">Jamón y queso</option></select></label>
+              <label>Preparación<select class="option-cooking"><option value="Crudas">Crudas</option><option value="Fritas">Fritas</option></select></label>
+              <label>Tamaño<select class="option-size"><option value="Cóctel" data-extra="0">Cóctel</option><option value="Merienda" data-extra="1000">Merienda</option><option value="Desayuno" data-extra="2000">Desayuno</option></select></label>
+              <div class="product-bottom"><label class="qty-label">Cantidad<input class="product-qty" type="number" min="1" max="500" value="10"></label><button class="add-button" data-product="Empanaditas">Agregar <span>+</span></button></div>
             </div>
-        </div>
-        <div class="fila-productos">
-            <img src="medallon.jpg" alt="imagen del producto (Medallones)">
-            <div class="productos">
-                <label>
-                    ¿Medallones de?
-                    <select class="sabor">
-                        <option value="200">Salchicha</option>
-                        <option value="200">Pollo</option>
-                    </select>
-                </label>
-                <label>
-                    ¿Los quieres?
-                    <select class="estado-de-coccion">
-                        <option value="100">Crudos</option>
-                        <option value="200">Fritos</option>
-                    </select>
-                </label>
-                <label>
-                    Cantidad
-                    <input type="number" class="cantidad" value="10" min="10">
-                </label>
-                <p>Total: <span class="resultado">0</span></p>
+          </article>
+          <article class="product-card" data-category="medallones" data-name="medallones salchicha pollo">
+            <div class="product-image"><img src="medallon.jpg" alt="Medallones de salchicha"><span class="product-label">Para picar</span></div>
+            <div class="product-body"><div class="product-title-row"><h2>Medallones</h2><span class="product-price">Desde $2.000</span></div><p>Pequeños bocados para completar tu bandeja.</p>
+              <label>Relleno<select class="option-flavor"><option value="Salchicha" data-price="2000">Salchicha</option><option value="Pollo" data-price="2000">Pollo</option></select></label>
+              <label>Preparación<select class="option-cooking"><option value="Crudos">Crudos</option><option value="Fritos">Fritos</option></select></label>
+              <div class="product-bottom"><label class="qty-label">Cantidad<input class="product-qty" type="number" min="1" max="500" value="10"></label><button class="add-button" data-product="Medallones">Agregar <span>+</span></button></div>
             </div>
-        </div>
+          </article>
+          <article class="product-card" data-category="bolitas" data-name="bolitas carne lenteja apanadas">
+            <div class="product-image"><img src="bolitasdecarne.jpg" alt="Bolitas apanadas de carne y lenteja"></div>
+            <div class="product-body"><div class="product-title-row"><h2>Bolitas apanadas</h2><span class="product-price">Desde $2.000</span></div><p>Una opción diferente para compartir en cada ocasión.</p>
+              <label>Variedad<select class="option-flavor"><option value="Carne" data-price="3000">Carne</option><option value="Lenteja" data-price="2000">Lenteja</option></select></label>
+              <label>Preparación<select class="option-cooking"><option value="Crudas">Crudas</option><option value="Fritas">Fritas</option></select></label>
+              <div class="product-bottom"><label class="qty-label">Cantidad<input class="product-qty" type="number" min="1" max="500" value="10"></label><button class="add-button" data-product="Bolitas apanadas">Agregar <span>+</span></button></div>
+            </div>
+          </article>
+        </section>
 
-        <div class="fila-productos">
-            <img src="bolitasdecarne.jpg" alt="imagen del producto (Bolitas de Carne y lenteja)">
-            <div class="productos">
-                <label>
-                    ¿Bolitas de?
-                    <select class="sabor">
-                        <option value="300">Carne</option>
-                        <option value="200">Lenteja</option>
-                    </select>
-                </label>
-                <label>
-                    ¿Los quieres?
-                    <select class="estado-de-coccion">
-                        <option value="100">Crudos</option>
-                        <option value="200">Fritos</option>
-                    </select>
-                </label>
-                <label>
-                    Cantidad
-                    <input type="number" class="cantidad" value="10" min="10">
-                </label>
-                <p>Total: <span class="resultado">0</span></p>
-            </div>
-        </div>
+        <aside class="cart-panel" id="carrito">
+          <div class="cart-heading"><span class="cart-icon">♧</span><div><h2>Tu pedido</h2><small id="cart-count">0 productos</small></div></div>
+          <div id="cart-items" class="cart-items"><p class="empty-cart">Tu carrito está esperando algo rico. Agrega tus favoritos para comenzar.</p></div>
+          <div class="cart-total"><span>Total estimado</span><strong id="cart-total">$0</strong></div>
+          <p class="cart-disclaimer">El total es una estimación según las opciones elegidas. Confirma precio, disponibilidad y domicilio por WhatsApp.</p>
+          <form id="checkout-form" class="checkout-form">
+            <label>Tu nombre<input id="customer-name" type="text" placeholder="¿Cómo te llamas?" required maxlength="80"></label>
+            <label>Barrio o zona de entrega<input id="customer-zone" type="text" placeholder="Ej. El Prado" required maxlength="100"></label>
+            <label>Dirección de entrega<input id="customer-address" type="text" placeholder="Dirección para el domicilio" required maxlength="160"></label>
+            <label>Notas (opcional)<textarea id="customer-notes" rows="2" placeholder="Fecha, hora o detalles del pedido" maxlength="400"></textarea></label>
+            <button class="whatsapp-button" type="submit"><span>◉</span> Enviar pedido por WhatsApp</button>
+          </form>
+          <p id="checkout-message" class="checkout-message" role="status"></p>
+        </aside>
+      </div>
+      <p class="price-note">Importante: revisa los precios de ejemplo y actualízalos antes de publicar la página para que coincidan con tus precios reales.</p>
     </div>
-    <script src="menu.js"></script>
-
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">D<span>♡</span>D</span><span class="brand-name">DelyDeditos<small>Hechos para compartir</small></span></a><p>Un antojito rico hace más bonito cualquier momento.</p><div class="footer-links"><a href="index.html">Inicio</a><a href="redes.html">Contacto</a></div><small class="copyright">© <span id="year"></span> DelyDeditos · Barranquilla, Colombia</small></div></footer>
+  <script src="sitio.js"></script>
+  <script src="menu.js"></script>
 </body>
-
 </html>

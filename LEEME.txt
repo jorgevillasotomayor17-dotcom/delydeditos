@@ -1,0 +1,21 @@
+DELYDEDITOS — SITIO WEB MEJORADO
+
+PARA PROBAR
+1. Extrae la carpeta/ZIP en tu computador.
+2. Abre index.html en tu navegador.
+3. Entra a "Nuestro menú" para probar filtros, búsqueda, carrito y formulario.
+
+ANTES DE PUBLICAR
+1. Abre menu.js en un editor de texto.
+2. Reemplaza PON_AQUI_TU_NUMERO por tu WhatsApp colombiano con indicativo 57 y solo dígitos.
+   Ejemplo de formato: 573001234567 (usa tu número real).
+3. Revisa y corrige los precios de ejemplo en menu.html y menu.js. Se mantuvieron como referencias
+   basadas en los valores que estaban en tu código anterior; no se asumen como precios definitivos.
+4. Actualiza los enlaces de redes sociales con las URL reales cuando las tengas.
+5. Confirma que los productos, tamaños, ingredientes y opciones correspondan exactamente a tu oferta.
+
+NOTAS
+- Las fotografías originales de productos se copiaron sin modificar.
+- El carrito funciona en el navegador y prepara un mensaje con el pedido para WhatsApp.
+- No se integra pago en línea ni se guarda el carrito en un servidor.
+- Las fuentes de Google Fonts requieren conexión; si no hay internet, se usarán fuentes alternativas.
