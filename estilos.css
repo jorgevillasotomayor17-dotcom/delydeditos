@@ -37,8 +37,8 @@ img {
 }
 
 .fila img {
-    width: 350px;
-    height: 120px;
+    width: 200px;
+    height: auto;
 }
 
 .contenedor {
@@ -129,12 +129,11 @@ p {
     }
 
     .fila img {
-        width: 50%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 320px;
         height: auto;
     }
-
-    .foto-extra {
+    .esconder{
         display: none;
     }
 }
