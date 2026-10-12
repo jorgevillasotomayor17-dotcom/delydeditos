@@ -1,17 +1,27 @@
 :root {
-  --fondo: #FFF8F0;
-  --texto: #4A3B35;
-  --principal: #F4A988;
-  --principal-hover: #E8926C;
-  --acento: #F9D5CB;
+    --fondo: #FFF8F0;
+    --texto: #4A3B35;
+    --principal: #F4A988;
+    --principal-hover: #E8926C;
+    --acento: #F9D5CB;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-.contenedor{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
     max-width: 700px;
     text-align: center;
     margin: 0 auto;
@@ -20,36 +30,36 @@ a {
 
 }
 
-.fila{
+.fila {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.fila img{
-    width: 200px;
-    height: auto;
+.fila img {
+    width: 350px;
+    height: 120px;
 }
 
-.contenedor{
+.contenedor {
     max-width: 700px;
     text-align: center;
 }
 
-body{
-    background-color: var(--fondo);
-    font-family: Fira Code, monospace;
+body {
+    background-color: var(--acento);
+    font-family: Arial, sans-serif;
 }
 
-h1{
-   text-align: center;
+h1 {
+    text-align: center;
     color: #db8b5c;
     border: solid var(--principal);
     background-color: var(--acento);
-    font-size: 40px;
+    font-size: 44px;
 }
 
-h2{
+h2 {
     text-align: center;
     color: #db8b5c;
     border: solid var(--principal);
@@ -59,7 +69,7 @@ h2{
 }
 
 
-.lema{
+.lema {
     text-align: center;
     font-weight: bold;
     font-style: italic;
@@ -67,12 +77,12 @@ h2{
     font-size: 24px;
 }
 
-p{
+p {
     text-align: center;
     color: goldenrod;
 }
 
-.menu{
+.menu {
     font-family: Fira Code, monospace;
     padding: 12px 24px;
     border-radius: 8px;
@@ -81,16 +91,19 @@ p{
     background-color: var(--acento);
     transition: background-color 1.5s, font-size 1.5s;
 }
-.menu:hover{
+
+.menu:hover {
     font-family: Fira Code, monospace;
     color: goldenrod;
     font-size: 20px;
     background-color: var(--acento);
     transition: background-color 1.5s, font-size 1.5s;
     border: solid var(--principal-hover);
+
 }
 
-.redes{
+
+.redes {
     font-family: Fira Code, monospace;
     padding: 12px 24px;
     border-radius: 8px;
@@ -101,11 +114,27 @@ p{
     transition: background-color 1.5s, font-size 1.5s;
 }
 
-.redes:hover{
+.redes:hover {
     font-family: Fira Code, monospace;
     font-size: 20px;
     color: goldenrod;
     background-color: var(--acento);
     transition: background-color 1.5s, font-size 1.5s;
     border: solid var(--principal-hover);
+}
+
+@media (max-width: 700px) {
+    .fila {
+        flex-direction: column;
+    }
+
+    .fila img {
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .foto-extra {
+        display: none;
+    }
 }
