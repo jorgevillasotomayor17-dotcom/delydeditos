@@ -3,7 +3,7 @@
  * IMPORTANTE: cambia WHATSAPP_NUMBER por el número del negocio en formato internacional,
  * solo números, sin +, espacios ni guiones. Ejemplo Colombia: 573001234567.
  */
-const WHATSAPP_NUMBER = "PON_AQUI_TU_NUMERO";
+const WHATSAPP_NUMBER = "573018344134";
 
 document.addEventListener("DOMContentLoaded", () => {
   const cart = [];
